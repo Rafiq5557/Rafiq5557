@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Seventen Sayangku!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(to right, #f9c5d1, #fddde6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      max-width: 600px;
+    }
+    h1 {
+      color: #ff5e78;
+    }
+    p {
+      color: #444;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>HAPPY BIRTHDAY SAYANGKU YANG CANTIKK🩷🩷</h1>
+    <p>
+      Maaf ya akuu buat nya telat, tapi akuu buat ini special kok buat sayang, tanpa paste-paste punya orang.<br><br>
+      Happy Seventen yaa sayangg, semoga yang ke 17 ini sayang sehatt, bahagiaa, dan di mudahkan rezekinya.<br>
+      Semoga tambah sabar (opsional hehe), tambah pinter, dan tambah rezekinya. Pokoknya happy terus yaa sayang!<br><br>
+      Sayang terus ya sama aku yang sederhana ini. ILOVEU SAYANGKUUUU 🥺🩷🩷
+    </p>
+  </div>
+</body>
+</html>
