@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Sayangku!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe0f0, #ffc0cb);
+      font-family: 'Poppins', sans-serif;
+      color: #d6336c;
+      text-align: center;
+      padding: 30px;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-family: 'Dancing Script', cursive;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .heart {
+      font-size: 2rem;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .falling-heart {
+      position: fixed;
+      top: -50px;
+      font-size: 24px;
+      color: #ff4d88;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .photo {
+      width: 80%;
+      max-width: 500px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://dl.sndup.net/qmch/Ed%20Sheeran%20-%20Perfect%20%5BOfficial%20Music%20Video%5D.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h1>🎉 HAPPY BIRTHDAY SAYANGKU YANG CANTIKK 🩷</h1>
+  <p>
+    Maaf ya akuu buat nya telat, tapi akuu buat ini special kok buat sayang, tanpa paste" punya orang,<br>
+    pokoknya paling special buat sayangku yang cantik ini 😙<br><br>
+
+    Happy Seventen yaa sayangg, semoga yang ke 17 ini sayang sehatt teruss, bahagiaa terus, dan di mudahkan rezekinya.<br>
+    Pokok nyaa happy teruusss dehh, happy juga sama akuu loo hehee 💕<br><br>
+
+    Dan semoga yang ke 17 inii di tambah sabar nyaa (opsional sayangg hehe), di tambah jugaa pinter nyaa,<br>
+    dan yang penting di tambah teruss rezeki nyaa aminn 🥹<br><br>
+
+    Happyy terus yaa sayaangg, maaff kalo aku ngucapin nya engga aturann, tapiii ini tulus dari hatii buatt sayanggg.<br>
+    Sayang terus yaa sama akuu yang sederhana inii hehehe 🫶<br><br>
+
+    udaa bingung ihhh, mungkin itu aja yaa sayanggg, pokoknyaa happy teruss buatt sayanggg.<br><br>
+
+    SEKALI LAGII AKUU UCAPIIN<br>
+    <strong>HAPPYY SEVENTEN SAYANGKU, CINTAKU, CANTIKKUUU</strong> 🩷<br>
+    <span class="heart">ILOVEE U SAYANGGGGKUUU 🥺🩷🩷</span>
+  </p>
+
+  <!-- Add Photo -->
+  <img src="https://github.com/Rafiq5557/Rafiq5557/blob/10bba8cb5a46de0132f303824e0fa5c924766295/IMG-20250403-WA0036.jpg="Foto bersama Sayang" class="photo">
+
+  <!-- Love falling effect -->
+  <script>
+    const hearts = ["💗", "💕", "💖", "💘", "🩷"];
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "falling-heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = 3 + Math.random() * 2 + "s";
+      heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
